@@ -31,4 +31,4 @@ function XO(str) {
     }
   }
 
-/* Not a very clean solution...
+/* Not a very clean solution*/
