@@ -5,7 +5,7 @@
 // [5, 8, 6, 3, 4]  =>  [3, 8, 6, 5, 4]
 
 function sortArray(array) {
-    const odd = array.filter(x => x%2 !== 0) //get odd numbers
+    const odd = array.filter(x => x%2 !== 0 || x%2 !== NaN) //get odd numbers
     let oddIndex = [];
     //find index of each odd number in array
     for (let i=0; i<odd.length; i++){
