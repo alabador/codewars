@@ -5,3 +5,19 @@
 // The input will always be valid (numbers will be an array of length 2 or greater, and all of the items will be numbers; target will always be the sum of two different items from that array).
 
 // twoSum([1, 2, 3], 4) // returns [0, 2] or [2, 0]
+
+
+function twoSum(numbers, target) {
+    //loop through array and check if (target - current value) is present
+    let indexArray = [];
+    for (let i = 0; i < numbers.length; i++){
+      if (numbers.includes(target - numbers[i], i)){
+        const firstNumber = target - numbers[i]
+        const firstIndex = numbers.indexOf(firstNumber, i)
+        const secondIndex = numbers.indexOf(target - firstNumber)
+        indexArray.push(firstIndex);
+        indexArray.push(secondIndex);
+        return indexArray;
+      }
+    }
+  }
