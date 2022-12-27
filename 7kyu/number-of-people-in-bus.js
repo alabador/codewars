@@ -9,3 +9,12 @@
 // Please keep in mind that the test cases ensure that the number of people in the bus is always >= 0. So the return integer can't be negative.
 
 // The second value in the first integer array is 0, since the bus is empty in the first bus stop.
+
+var number = function(busStops){
+    let riders = 0;
+    busStops.forEach(pair => {
+      riders += pair[0];
+      riders -= pair[1];
+    })
+    return riders;
+  }
