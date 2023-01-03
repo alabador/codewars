@@ -10,7 +10,7 @@ View Codewars stats [here](https://www.codewars.com/users/alabador), or click on
 
 ## How It's Made
 
-**Tech used:** JavaScript
+**Tech used:** JavaScript, Python
 
 My goal is to practice at least one Codewar Kata a day, in order to keep my programming skills sharp. 
 
